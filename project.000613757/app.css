@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: 'Merriweather', serif;
+  width: 35rem;
+  background: white;
+  box-shadow:-1px -1px 84px -19px rgba(171,164,164,0.75);
+  border-radius: 1.2rem;
+  padding: 1rem;
+  margin-top: 5%;
+}
+
+h2 {
+  border: 1px solid #4C66FF;
+  color: #2337FF;
+  flex-wrap: wrap;
+  width: 45%;
+  margin-right: 0.5rem;
+  padding: 0.5rem;
+  background: white;
+  box-shadow: -1px -1px 84px -19px rgba(171,164,164,0.75);
+  font-family: 'Josefin Sans', sans-serif;
+  color: #2337FF;
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    border-radius: none;
+    margin: 0;
+    width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+form {
+  padding: 1rem;
+}
+
+h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #2337FF;
+}
+
+ form > h4 {
+  margin-left: 0.5rem;
+}
+
+.input-box {
+  background: white;
+  margin: 0.5rem;
+}
+
+h4 + .input-group .input-box, .input-group:nth-child(3) .input-box  {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  background: #D7D7D7;
+  height: 1.8rem;
+  border: 0.5px solid #2337FF;
+}
+
+.name {
+  border: none;
+  outline: none;
+  height: 1.5rem;
+  width: 84%;
+  align-self: center;
+  text-transform: capitalize;
+}
+
+input[type="email"] {
+  text-transform: none;
+}
+
+.input-box > i {
+  text-align: center;
+  width: 15%;
+  align-self: center;
+  height: 1.3rem;
+  color: #2337FF; 
+}
+
+.input-box .dob {
+  width: 30%;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+  border: 0.5px solid #2337FF;
+  outline: none;
+  padding: 0.2rem;
+}
+
+input[type='radio'] {
+  margin-top: 1rem;
+}
+
+.input-group:nth-child(5) label  {
+  display: inline-flex;
+  width: 40%;
+  margin: 0.2rem;
+  background: #D7D7D7;
+  text-transform: capitalize;
+  padding: 0.3rem;
+}
+
+span > i {
+  color: #2337FF;
+}
+
+.input-group:nth-child(6) .input-box {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  background: #D7D7D7;
+  height: 1.8rem;
+  border: 0.5px solid #2337FF;
+}
+
+.input-group:nth-child(7) .input-box:first-child {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  background: #D7D7D7;
+  height: 1.8rem;
+  border: 0.5px solid #2337FF;
+}
+
+input[type='tel'] {
+  width: 85%;
+  outline: none;
+  padding: 0.2rem;
+  border: none;
+}
+
+select {
+  display: inline-flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 45%;
+  height: 1.8rem;
+  border: 0.5px solid #2337FF;
+}
+
+button {
+  width: 107%;
+  text-align: center;
+  background: #2337FF;
+  height: 1.8rem;
+  border: none;
+  color: white;
+}
+
+button:hover {
+  background: #0A2CFF;
+}
